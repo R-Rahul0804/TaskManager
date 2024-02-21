@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "install-server": "cd server && npm install",
-    "start-server": "cd server && nodemon server.js",
+    "start-server": "cd server && npm start",
     "install-client": "cd client && npm install",
-    "start-client": "cd client && npm run start"
+    "start-client": "cd client && npm start",
+    "build":"cd client && npm run build"
   },
   "author": "ashutosh44ks",
   "license": "ISC"
