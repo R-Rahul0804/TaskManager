@@ -18,7 +18,7 @@ const Entry = () => {
   const loginUser = async () => {
     try {
       const { data } = await axios.post(
-        'https://taskmanagerback-06x3.onrender.com/api/auth/login',
+        'https://taskmanager-9k9j.onrender.com/api/auth/login',
         {
           username,
           password,
@@ -35,7 +35,7 @@ const Entry = () => {
   const registerUser = async () => {
     try {
       const { data } = await axios.post(
-        'https://taskmanagerback-06x3.onrender.com/api/auth/register',
+        'https://taskmanager-9k9j.onrender.com/api/auth/register',
         {
           username,
           password,

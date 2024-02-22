@@ -2,7 +2,7 @@ import axios from "axios";
 import jwt_decode from "jwt-decode";
 
 const api = axios.create({
-  baseURL:"https://taskmanagerback-06x3.onrender.com",
+  baseURL:"https://taskmanager-9k9j.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
@@ -12,7 +12,7 @@ const refreshToken = async () => {
   const refreshToken = JSON.parse(localStorage.getItem("mern-task-management/user")).refreshToken;
   try {
     const { data } = await axios.post(
-      'https://taskmanagerback-06x3.onrender.com/api/auth/refresh_token',
+      'https://taskmanager-9k9j.onrender.com/api/auth/refresh_token',
       {
         token: refreshToken,
       }
@@ -45,13 +45,6 @@ api.interceptors.request.use(
   }
 );
 
-// Add a response interceptor
-// axios.interceptors.response.use(function (response) {
-//   // Do something with response data
-//   return response;
-// }, function (error) {
-//   // Do something with response error
-//   return Promise.reject(error);
-// });
+
 
 export default api;
