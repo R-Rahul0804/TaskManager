@@ -1,0 +1,3 @@
+[build]
+  command = "CI=false npm run build"   # Set CI=false to not treat warnings as errors
+  publish = "client/build"
